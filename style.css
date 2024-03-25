@@ -1,58 +1,51 @@
 body, textarea, button, label {
-    font-family: 'Arial', sans-serif; /* Replace with your PowerPoint font if available */
-    color: white; /* Text color set to white for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* For text color */
 }
 
 body {
-    background-color: black; /* Setting the background to black */
+    background-color: black; /* PowerPoint background */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .container {
+    width: 80%;
     max-width: 600px;
     padding: 20px;
-    text-align: center;
 }
 
 textarea {
-    width: calc(100% - 20px); /* Adjusting width to account for padding */
+    width: 100%;
     height: 100px;
     margin-bottom: 20px;
-    padding: 10px;
-    background-color: #333; /* Darker background for the textarea */
-    border: 1px solid #444;
+    background-color: #333; /* Darker background for text areas */
+    color: white; /* Text color in text areas */
+    border: 1px solid #555;
     border-radius: 4px;
-    color: white; /* Text color inside textarea */
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin: 10px 0 5px;
 }
 
 button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
     padding: 10px 20px;
-    background-color: #222; /* Darker background for the button */
-    border: 1px solid #555;
     border-radius: 4px;
     cursor: pointer;
-    color: white; /* Text color */
-}
-
-button:hover {
-    background-color: #555;
+    display: block; /* Center button */
+    margin: 20px auto; /* Center button */
 }
 
 #feedback {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #444; /* Darker background for feedback */
+    color: white;
+    background-color: #333;
+    border: 1px solid #555;
     border-radius: 4px;
+    padding: 10px;
     display: none; /* Initially hidden */
+    margin-top: 20px;
 }
