@@ -1,51 +1,42 @@
-body, textarea, button, label {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white; /* For text color */
-}
-
-body {
-    background-color: black; /* PowerPoint background */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-}
-
-textarea {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 20px;
-    background-color: #333; /* Darker background for text areas */
-    color: white; /* Text color in text areas */
-    border: 1px solid #555;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: block; /* Center button */
-    margin: 20px auto; /* Center button */
-}
-
-#feedback {
-    color: white;
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 4px;
-    padding: 10px;
-    display: none; /* Initially hidden */
-    margin-top: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Value Mapping Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Earth Innovator! 🌍</h1>
+        <p class="intro">I’m Kang, an interstellar merchant from a galaxy far away. My mission? To explore the most intriguing innovations of your planet for potential intergalactic exchange. Your creation has caught our cosmic interest. Could it be what we're looking for?</p>
+        
+        <div class="step">
+            <h2>STEP 1: Describe your innovation</h2>
+            <p>Please share the essence of your innovation with us. Your words will pave our path to understanding.</p>
+            <textarea id="innovation" name="innovation"></textarea>
+        </div>
+        
+        <div class="step">
+            <h2>STEP 2: Negotiations begin!</h2>
+            <p>What benefits does this innovation bring? Consider how it improves upon existing solutions or addresses unmet needs. Your insights will help us assess its potential value.</p>
+            <textarea id="benefits" name="benefits"></textarea>
+        </div>
+        
+        <div class="step">
+            <h2>STEP 3: Asking for Concrete Examples.</h2>
+            <p>You've outlined broad benefits which is a great start. Now can you give me specific examples of how this innovation has positively impacted you or others? Real-world examples will help us better understand its value.</p>
+            <textarea id="examples" name="examples"></textarea>
+        </div>
+        
+        <div class="step">
+            <h2>STEP 4: Evaluation and summary.</h2>
+            <p>Marvelous dialogue Earth's brilliant mind! 🌟 The depths of your innovation's values have truly transcended the stars. For this galactic exchange of ideas I am over the moon to bestow upon you:</p>
+            <textarea id="summary" name="summary"></textarea>
+        </div>
+        
+        <button id="submit">Submit</button>
+        <div id="feedback"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
