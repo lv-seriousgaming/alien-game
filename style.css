@@ -1,0 +1,43 @@
+body, textarea {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box; /* So padding doesn't increase the width */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+#feedback {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+}
